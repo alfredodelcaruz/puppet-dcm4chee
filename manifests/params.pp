@@ -45,8 +45,8 @@ class dcm4chee::params {
   ]
   $weasis_hosts_allow = []
 
-  if !($::operatingsystem == 'Ubuntu' and $::operatingsystemrelease == '14.04'
+  if !($::operatingsystem == 'Ubuntu' and $::operatingsystemrelease == '16.04'
   and $::architecture == 'amd64') {
-    fail('Module only supports Ubuntu 14.04 64bit')
+    fail('Module only supports Ubuntu 16.04 64bit')
   }
 }
